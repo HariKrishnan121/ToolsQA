@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<test name="chromeTest" thread-count="1">
+		<parameter name="userName" value="Harikrishnan" />
+		<parameter name="password" value="Hari@123" />
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.Test_Runner.Test_Runner_Class" />
+		</classes>
+	</test>
+	<test name="fireFox" thread-count="1">
+		<parameter name="userName" value="Harikrishnan" />
+		<parameter name="password" value="Hari@123" />
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="com.Test_Runner.Test_Runner_Class" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

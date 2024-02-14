@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="password" value="Hari@123"/>
+  <parameter name="browser" value="firefox"/>
+  <parameter name="userName" value="Harikrishnan"/>
+  <test name="chromeTest(failed)">
+    <parameter name="password" value="Hari@123"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="userName" value="Harikrishnan"/>
+    <classes>
+      <class name="com.Test_Runner.Test_Runner_Class">
+        <methods>
+          <include name="browser"/>
+          <include name="browser"/>
+          <include name="form" invocation-numbers="0"/>
+          <include name="login"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- com.Test_Runner.Test_Runner_Class -->
+    </classes>
+  </test> <!-- chromeTest(failed) -->
+  <test name="fireFox(failed)">
+    <parameter name="password" value="Hari@123"/>
+    <parameter name="browser" value="firefox"/>
+    <parameter name="userName" value="Harikrishnan"/>
+    <classes>
+      <class name="com.Test_Runner.Test_Runner_Class">
+        <methods>
+          <include name="browser"/>
+          <include name="browser"/>
+          <include name="form"/>
+          <include name="login"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- com.Test_Runner.Test_Runner_Class -->
+    </classes>
+  </test> <!-- fireFox(failed) -->
+</suite> <!-- Failed suite [Suite] -->
